@@ -19,7 +19,8 @@ app.get("/galaxias", async (req: Request, res: Response) => {
 
     res.send(render(req.url, initialProps));
   } catch (error) {
-    throw new Error(" An error ocurred in /galaxias", error);
+    console.log(error);
+    throw new Error("An error ocurred in /galaxias", error);
   }
 });
 
