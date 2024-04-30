@@ -10,19 +10,15 @@ const GalaxiesPageWrapper = styled.div`
   width: calc(100% - 6rem);
 `;
 
-export const Galaxies = ({ props }) => {
-  const renderLayout = () => {
-    if (props?.galaxies.length === 0) {
-      return <LoadingSpinner />;
-    } else {
-      return <GalaxiesLayout galaxies={props?.galaxies} />;
-    }
-  };
-
+export const Galaxies = (props) => {
   return (
     <GalaxiesPageWrapper>
       <h1>Galaxias</h1>
-      {renderLayout()}
+      {props.galaxies.length === 0 ? (
+        <LoadingSpinner />
+      ) : (
+        <GalaxiesLayout galaxies={props.galaxies} />
+      )}
     </GalaxiesPageWrapper>
   );
 };
