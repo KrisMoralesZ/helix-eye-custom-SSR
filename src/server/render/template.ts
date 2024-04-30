@@ -1,5 +1,5 @@
-export const template = (html): string => {
-  return (`
+export const template = (html: string, initialProps = {}): string => {
+  return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -13,9 +13,10 @@ export const template = (html): string => {
     <title>Helix App</title>
     </head>
     <body>  
-     ${html}
-    <div id="app"></div>
+    <div id="app"> ${html}</div>
+    <script> window.__INITIAL_PROPS__= ${JSON.stringify(initialProps)}</script>
+    <script src="app.js" type="text/javascript"></script>
     </body>
     </html>
-    `);
+    `;
 };
