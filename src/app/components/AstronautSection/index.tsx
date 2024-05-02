@@ -1,7 +1,7 @@
-import React from 'react';
-import { StyledAstronaut } from './styles';
+import React from "react";
+import { StyledAstronaut } from "./AstronautSection.sc";
 
-const ASTRONAUT_IMAGE = "https://i.imgur.com/tBkWIfP.png"
+const ASTRONAUT_IMAGE = "https://i.imgur.com/tBkWIfP.png";
 
 export const AstronautSection = () => {
   return (
@@ -11,5 +11,5 @@ export const AstronautSection = () => {
         <img src={ASTRONAUT_IMAGE} alt="astronaut ilustration" />
       </div>
     </StyledAstronaut>
-  )
-}
+  );
+};

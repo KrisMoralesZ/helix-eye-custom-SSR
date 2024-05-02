@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledHero = styled.section`
   margin-top: 100px;
@@ -10,7 +10,7 @@ export const StyledHero = styled.section`
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
-    color: #2646A6;
+    color: #2646a6;
   }
 
   & > p {
@@ -25,8 +25,8 @@ export const StyledHero = styled.section`
     display: grid;
     grid-template-columns: 480px auto;
     grid-template-areas:
-    'image title'
-    'image subtitle';
+      "image title"
+      "image subtitle";
     column-gap: 120px;
     margin: 80px auto;
     max-width: 65%;
@@ -57,4 +57,4 @@ export const StyledHero = styled.section`
       align-self: baseline;
     }
   }
-`
+`;

@@ -13,7 +13,7 @@ const GalaxiesPageWrapper = styled.div`
 export const Galaxies = (props) => {
   return (
     <GalaxiesPageWrapper>
-      <h1>Galaxias</h1>
+      <h1>Galaxies</h1>
       {props.galaxies.length === 0 ? (
         <LoadingSpinner />
       ) : (

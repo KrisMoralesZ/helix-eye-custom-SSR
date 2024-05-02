@@ -1,14 +1,14 @@
-import React from 'react';
-import { LandingCard } from '../LandingCard';
-import { StyledHighlitedContent } from './styles';
+import React from "react";
+import { LandingCard } from "../LandingCard";
+import { StyledHighlitedContent } from "./styles";
 
 export const HighlightedContent = () => {
   return (
     <StyledHighlitedContent>
-      <h2>Descubre todo el universo observable</h2>
+      <h2>All the universe to discover</h2>
       <p className="message">
-        Con una sola búsqueda accede a todo el historial y archivos públicos
-        recogidos por la NASA
+        With a single search access all history and public files collected by
+        NASA
       </p>
       <div className="cards-wrapper">
         <LandingCard data="1k" message="imágenes" />
