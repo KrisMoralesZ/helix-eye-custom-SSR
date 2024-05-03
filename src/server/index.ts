@@ -14,7 +14,7 @@ if (isDev) {
   app.use(express.static("dist"));
 }
 
-app.get("/galaxias", async (req: Request, res: Response) => {
+app.get("/galaxies", async (req: Request, res: Response) => {
   try {
     const { data } = await axios.get(
       "https://images-api.nasa.gov/search?q=galaxies"

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MenuButton, MenuContainer } from "./styles";
+import { MenuButton, MenuContainer } from "./Menu.sc";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -25,8 +25,8 @@ export const Menu = () => {
             </a>
           </li>
           <li>
-            <a href="/galaxias" onClick={closeMenu}>
-              Galaxias
+            <a href="/galaxies" onClick={closeMenu}>
+              Galaxies
             </a>
           </li>
         </ul>

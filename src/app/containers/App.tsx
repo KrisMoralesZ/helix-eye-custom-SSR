@@ -13,7 +13,7 @@ export const App = (props) => {
       <Menu />
       <Routes>
         <Route index path="/" element={<Home />} />
-        <Route path="/galaxias" element={<Galaxies {...props} />} />
+        <Route path="/galaxies" element={<Galaxies {...props} />} />
       </Routes>
       <Footer />
     </>
