@@ -57,7 +57,7 @@ export const GalaxyCard = ({ galaxy }: GalaxyCardProps) => {
           ))}
         </div>
         <p className="description">{galaxyData.description}</p>
-        <a href="">
+        <a href="/galaxies/:id">
           <button>See More</button>
         </a>
       </div>
